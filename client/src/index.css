@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-kugoo-nude-light text-kugoo-ink font-sans antialiased;
+  margin: 0;
+}
+
+::selection {
+  background: #F0592B;
+  color: #fff;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #dccab0;
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c9b393;
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/70 backdrop-blur-xl border border-white/60;
+  }
+  .glass-dark {
+    @apply bg-kugoo-green/80 backdrop-blur-xl border border-white/10;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-kugoo-orange px-6 py-3 font-semibold text-white transition-all hover:bg-kugoo-orange-dark hover:shadow-glow active:scale-95 disabled:opacity-50;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-kugoo-green px-6 py-3 font-semibold text-white transition-all hover:bg-kugoo-green-dark active:scale-95 disabled:opacity-50;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-kugoo-green/20 bg-white px-6 py-3 font-semibold text-kugoo-green transition-all hover:bg-kugoo-nude active:scale-95;
+  }
+  .card {
+    @apply rounded-3xl bg-white shadow-soft;
+  }
+  .input {
+    @apply w-full rounded-2xl border border-kugoo-nude-dark bg-white px-4 py-3 text-kugoo-ink outline-none transition focus:border-kugoo-orange focus:ring-2 focus:ring-kugoo-orange/20;
+  }
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-semibold;
+  }
+}
+
+.hero-gradient {
+  background: radial-gradient(120% 120% at 80% 0%, #4a8560 0%, #356946 45%, #244a31 100%);
+}
+
+.mesh-bg {
+  background-color: #356946;
+  background-image: radial-gradient(at 0% 0%, rgba(240, 89, 43, 0.35) 0px, transparent 50%),
+    radial-gradient(at 90% 10%, rgba(236, 221, 201, 0.25) 0px, transparent 50%),
+    radial-gradient(at 50% 100%, rgba(74, 133, 96, 0.6) 0px, transparent 50%);
+}
+
+.text-shadow {
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.25);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

@@ -1,0 +1,1 @@
+- [Vite React duplication](vite-react-duplication.md) — mixing `@/` alias and relative imports for the same modules creates duplicate React copies → "Invalid hook call".

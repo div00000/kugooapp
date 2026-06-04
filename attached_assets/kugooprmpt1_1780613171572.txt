@@ -1,0 +1,714 @@
+KUGOO ECOSYSTEM - MASTER PRODUCT REQUIREMENTS DOCUMENT (PRODUCTION VERSION)
+
+MISSION
+
+Build Kugoo as a production-grade, investor-ready food delivery ecosystem, not as a prototype.
+
+Every feature, database design, API, workflow, security implementation, user experience, animation, AI interaction, payment system, and infrastructure decision must be designed for scalability, maintainability, performance, security, App Store compliance, Google Play compliance, and future expansion.
+
+The final product should feel comparable to Uber Eats, DoorDash, Glovo, Bolt Food, and Deliveroo while maintaining a unique Kugoo identity.
+
+---
+
+PLATFORM OVERVIEW
+
+Build the following:
+
+1. Customer Mobile App
+2. Rider Mobile App
+3. Merchant/Vendor Portal
+4. Admin Dashboard
+5. Zaam AI Assistant
+6. Zaam WhatsApp Ordering Bot
+7. Real-Time Tracking System
+8. Payment System
+9. Analytics System
+10. Revenue & Commission Engine
+11. Marketing Website
+12. Backend Infrastructure
+13. API Layer
+14. Notification System
+15. Social Media Integration System
+
+---
+
+PRIMARY OBJECTIVE
+
+Allow users to:
+
+* Discover food
+* Order food
+* Pay securely
+* Track deliveries in real-time
+* Receive food efficiently
+
+Allow merchants to:
+
+* Manage menus
+* Receive orders
+* Process orders
+* Monitor revenue
+
+Allow riders to:
+
+* Accept deliveries
+* Navigate routes
+* Earn income
+
+Allow administrators to:
+
+* Manage the entire platform
+* Configure pricing
+* Manage commissions
+* Monitor analytics
+* Monitor operations
+
+---
+
+CUSTOMER APPLICATION
+
+Authentication
+
+* Email signup
+* Phone signup
+* Google login
+* Apple login
+* Secure authentication
+* Password reset
+* OTP verification
+
+User Profile
+
+* Full name
+* Phone number
+* Profile photo
+* Saved addresses
+* Saved locations
+* Payment methods
+* Order history
+
+Food Discovery
+
+* Restaurant listings
+* Food categories
+* Search functionality
+* Recommendations
+* Trending meals
+* Featured vendors
+
+Cart System
+
+* Add items
+* Remove items
+* Quantity controls
+* Notes to vendor
+* Delivery instructions
+
+Checkout
+
+* Delivery address
+* Payment selection
+* Order confirmation
+
+---
+
+ORDER FLOW
+
+Customer places order.
+
+Vendor receives notification.
+
+Vendor accepts order.
+
+Vendor begins preparing food.
+
+Vendor marks:
+
+"Food Ready"
+
+System automatically finds nearest available rider.
+
+Available rider receives delivery request.
+
+Rider accepts.
+
+Rider travels to vendor.
+
+Rider confirms pickup.
+
+Customer sees live tracking.
+
+Rider delivers order.
+
+Customer clicks:
+
+"Order Received"
+
+Rider clicks:
+
+"Delivered"
+
+Order closes successfully.
+
+---
+
+TRACKING SYSTEM
+
+Generate unique tracking IDs.
+
+Example:
+
+KG-2026-000001
+
+Customer can:
+
+* Track rider location
+* View rider information
+* View delivery progress
+* View ETA
+
+Examples:
+
+"Your food will arrive in 27 minutes"
+
+"Rider is 2.3km away"
+
+Use real-time GPS updates.
+
+Use live route rendering.
+
+Use map visualization.
+
+---
+
+ZAAM AI ASSISTANT
+
+Name:
+
+Zaam
+
+Implementation:
+
+Floating AI assistant icon visible throughout the platform.
+
+Functions:
+
+* Food recommendations
+* Restaurant discovery
+* Order assistance
+* Tracking assistance
+* Customer support
+* Promotions
+* FAQs
+* Intelligent search
+
+Examples:
+
+"I want spicy rice under ₦5,000"
+
+"Where is my rider?"
+
+"Show nearby restaurants"
+
+"What is today's promotion?"
+
+Zaam should feel intelligent, conversational, and helpful.
+
+---
+
+ZAAM WHATSAPP BOT
+
+Name:
+
+Zaam
+
+Purpose:
+
+Allow users to order food directly through WhatsApp.
+
+Examples:
+
+"Order jollof rice"
+
+"Track KG-2026-000001"
+
+"Show nearby restaurants"
+
+"Recommend food"
+
+Capabilities:
+
+* Place orders
+* Generate payment links
+* Track orders
+* Customer support
+* Delivery updates
+* Restaurant discovery
+
+All WhatsApp actions must synchronize with the Kugoo backend.
+
+---
+
+MERCHANT PORTAL
+
+Merchant Features
+
+* Registration
+* Verification
+* Menu management
+* Food uploads
+* Pricing controls
+* Inventory controls
+* Order management
+* Revenue analytics
+
+Order Processing
+
+* Accept order
+* Reject order
+* Food preparation
+* Mark food ready
+
+Analytics
+
+* Daily sales
+* Weekly sales
+* Monthly sales
+* Top-selling foods
+* Repeat customers
+
+---
+
+RIDER APPLICATION
+
+Features
+
+* Rider registration
+* Identity verification
+* Vehicle registration
+* Availability toggle
+* Accept delivery
+* Reject delivery
+* Navigation
+* Delivery management
+
+Workflow
+
+Online → Receive Request
+
+Accept → Navigate
+
+Pickup → Confirm
+
+Deliver → Complete
+
+Earnings Dashboard
+
+* Daily earnings
+* Weekly earnings
+* Monthly earnings
+* Lifetime earnings
+
+---
+
+ADMIN DASHBOARD
+
+Full platform control center.
+
+Features
+
+* User management
+* Merchant management
+* Rider management
+* Order monitoring
+* Revenue analytics
+* Payment analytics
+* Fraud detection
+* Customer support
+* Content moderation
+* System monitoring
+* Audit logs
+
+---
+
+COMMISSION ENGINE
+
+Admin can configure:
+
+* Vendor commission
+* Rider commission
+* Platform commission
+
+Example:
+
+Food = ₦10,000
+
+Vendor = ₦8,500
+
+Rider = ₦1,000
+
+Platform = ₦500
+
+Percentages should be editable from dashboard.
+
+Changes should apply automatically.
+
+---
+
+PAYMENTS
+
+Integrate:
+
+* Paystack
+* Flutterwave
+* Korapay
+
+Support:
+
+* Cards
+* Wallets
+* Bank transfers
+
+Requirements
+
+* Secure processing
+* Encrypted transactions
+* Transaction logs
+* Refund support
+
+---
+
+NOTIFICATIONS
+
+Push Notifications
+
+Email Notifications
+
+SMS Notifications
+
+WhatsApp Notifications
+
+Events:
+
+* Order placed
+* Order accepted
+* Food ready
+* Rider assigned
+* Rider arriving
+* Delivered
+
+---
+
+MARKETING WEBSITE
+
+IMPORTANT
+
+Build a separate world-class marketing website for Kugoo.
+
+This website must not look like a template.
+
+The website should feel premium, futuristic, immersive, and memorable.
+
+Purpose
+
+* Explain Kugoo
+* Showcase features
+* Showcase vendors
+* Showcase riders
+* Showcase Zaam AI
+* Showcase WhatsApp ordering
+* Drive app downloads
+
+Download Buttons
+
+* App Store
+* Google Play
+
+Website should redirect users directly to app download pages.
+
+---
+
+3D WEBSITE EXPERIENCE
+
+The website is a major part of the product.
+
+Create a highly interactive 3D experience.
+
+Use:
+
+* Three.js
+* React Three Fiber
+* GSAP
+* Framer Motion
+
+Examples of interactions:
+
+A 3D city environment.
+
+Motorcycles move through the city.
+
+Riders pick up food.
+
+Food packages move through delivery routes.
+
+Characters interact with restaurants.
+
+Users can scroll through the story.
+
+As visitors scroll:
+
+Scene 1:
+Customer places order.
+
+Scene 2:
+Vendor prepares meal.
+
+Scene 3:
+Rider picks up order.
+
+Scene 4:
+Delivery journey begins.
+
+Scene 5:
+Customer receives food.
+
+Scene 6:
+Zaam AI appears.
+
+Scene 7:
+Call-to-action to download app.
+
+Animations should feel cinematic and smooth.
+
+No lag.
+
+No cheap effects.
+
+Desktop and mobile optimized.
+
+---
+
+SOCIAL MEDIA INTEGRATION
+
+Prepare Kugoo for:
+
+* X
+* Instagram
+* TikTok
+* YouTube
+* Facebook
+
+Website should include:
+
+* Social media links
+* Social sharing
+* Deep linking
+* Referral sharing
+
+Users should be able to discover Kugoo through social media campaigns and land on the website.
+
+---
+
+DESIGN REQUIREMENTS
+
+Entire ecosystem should use premium 3D design principles.
+
+Requirements:
+
+* Modern
+* Elegant
+* Premium
+* Futuristic
+* Fast
+* Clean
+
+Use:
+
+* Glassmorphism
+* Layered depth
+* Dynamic lighting
+* Floating elements
+* Smooth transitions
+* Interactive cards
+* Motion effects
+
+Current food experience should use official Kugoo green branding.
+
+Logo, color codes, typography, brand guide, and visual references will be supplied later.
+
+---
+
+TECH STACK
+
+Frontend
+
+* React
+* TypeScript
+* Tailwind CSS
+
+Mobile
+
+* React Native
+* Expo
+
+Backend
+
+* Node.js
+* Express
+
+Database
+
+* PostgreSQL
+
+Authentication
+
+* Firebase Auth
+
+Storage
+
+* Supabase Storage
+
+Realtime
+
+* Socket.IO
+
+Maps
+
+* Google Maps API
+
+AI
+
+* OpenAI APIs
+
+WhatsApp
+
+* WhatsApp Business API
+
+Deployment
+
+* Vercel
+* Render
+* Supabase
+
+---
+
+IOS AND GOOGLE PLAY COMPLIANCE
+
+The entire platform must be built according to:
+
+* Apple App Store Review Guidelines
+* Google Play Developer Policies
+
+Requirements
+
+Account Deletion
+
+Users must be able to permanently delete their account directly inside the app.
+
+Privacy
+
+* Privacy Policy
+* Terms of Service
+* Data disclosure
+* Consent management
+
+Permissions
+
+* Location permissions
+* Notification permissions
+* Camera permissions
+
+All permissions must be properly justified.
+
+Security
+
+* HTTPS everywhere
+* JWT authentication
+* Encryption
+* Role-based access control
+* Secure APIs
+
+Accessibility
+
+* Screen reader support
+* Font scaling
+* Accessibility labels
+
+User Safety
+
+* Report user
+* Report vendor
+* Report rider
+* Block functionality
+
+---
+
+QUALITY ASSURANCE
+
+Before deployment:
+
+Perform comprehensive testing.
+
+Test:
+
+* Authentication
+* Payments
+* Tracking
+* Rider assignment
+* Notifications
+* AI assistant
+* WhatsApp bot
+* Admin dashboard
+* Merchant dashboard
+* Customer app
+* Website
+* Mobile responsiveness
+* Security
+
+Requirements
+
+* No broken pages
+* No broken links
+* No placeholder content
+* No unfinished features
+* No console errors
+* No API failures
+* No performance bottlenecks
+
+---
+
+SCALABILITY
+
+Architecture must support:
+
+* Millions of users
+* Thousands of vendors
+* Thousands of riders
+* Future logistics services
+* Grocery delivery
+* Parcel delivery
+* Ride hailing
+* Multi-country expansion
+
+---
+
+FINAL DELIVERABLE
+
+Deliver:
+
+1. Customer Mobile App
+2. Rider Mobile App
+3. Merchant Dashboard
+4. Admin Dashboard
+5. Zaam AI Assistant
+6. Zaam WhatsApp Bot
+7. Marketing Website
+8. Backend APIs
+9. Database Architecture
+10. Payment Integration
+11. Tracking System
+12. Analytics System
+13. Documentation
+14. Production Deployment Configuration
+
+The final product must be production-ready, scalable, secure, visually exceptional, App Store compliant, Google Play compliant, and ready for real-world commercial launch.
